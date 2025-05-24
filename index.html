@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria online</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>El librero</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a nuestra libreria</h2>
+            <p>Venta de libros nuevos, usados y universitarios.</p>
+            <img src="./imagenes/estanteria2.jpeg" alt="Estante con libros" style="width: 100%; height: auto;"> 
+        </section>
+        <section id="productos" class="productos">
+            <h2>Libros en ventas</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./imagenes/elprincipito.jpeg" alt="libro 1">
+                    <h3>El principito</h3>
+                    <p>$15000</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/hp.jpeg" alt="libro 2">
+                    <h3>Harry potter y la piedra filosofal</h3>
+                    <p>$30000</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/losJDH.jpeg" alt="libro 3">
+                    <h3>Los juegos del hambre</h3>
+                    <p>$30000</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/el-eternauta.jpeg" alt="libro 4">
+                    <h3>El eternauta</h3>
+                    <p>$30000</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/anatomia.jpeg" alt="libro 5">
+                    <h3>Atlas de anatomia humana</h3>
+                    <p>$30000</p>
+                </div>
+                <div class="card">
+                    <img src="./imagenes/quimica.jpeg" alt="libro 6">
+                    <h3>Quimica general</h3>
+                    <p>$30000</p>
+                </div>
+            </div>
+        </section>
+        <section id="resenas" class="resenas">
+            <h2>Reseñas</h2>
+            <div class="grid-resenas">
+                <div class="resena">Excelente atencion y envio rapido</div>
+                <div class="resena">Encontre libros que no hallaba en ningun lado. Lo viejo funciona</div>
+                <div class="resena">Muy buenos precios y variedad academica</div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mdkgrkvp" method="POST">
+                <label>Nombre:
+                    <input type="text" name="nombre" required>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>Mensaje:
+                    <textarea name="mensaje" required></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Librería Online - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
